@@ -8,7 +8,6 @@ const jwt = require('jsonwebtoken');
 const { log } = require('console');
 require('dotenv').config();
 
-// Authentication middleware
 const authenticate = async (req, res, next) => {
   const token = req.headers.authorization;
   if (token) {
